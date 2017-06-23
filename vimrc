@@ -18,6 +18,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'oplatek/Conque-Shell'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'pernatiy/taglist.vim'
+Plugin 'nvie/vim-flake8'
 
 call vundle#end()           " required
 filetype plugin indent on    " required
@@ -165,6 +166,11 @@ nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 "let g:miniBufExplMoreThanOne=0 
 "let g:miniBufExplBuffersNeeded=0
 "nmap <leader>bda :bd <C-a> <CR>
+
+"-----------------------------------------------------------------------------
+" Flake8
+"-----------------------------------------------------------------------------
+autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 
 "set exrc
 "set secure
