@@ -170,7 +170,7 @@ nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 "-----------------------------------------------------------------------------
 " Flake8
 "-----------------------------------------------------------------------------
-autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
+autocmd FileType python map <buffer> <F4> :call Flake8()<CR>
 
 "set exrc
 "set secure
