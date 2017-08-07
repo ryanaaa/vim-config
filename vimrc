@@ -174,3 +174,9 @@ autocmd FileType python map <buffer> <F4> :call Flake8()<CR>
 
 "set exrc
 "set secure
+
+set noswapfile
+
+if filereadable(glob(".lvimrc")) 
+    source .lvimrc
+endif
