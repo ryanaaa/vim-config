@@ -19,6 +19,7 @@ Plugin 'oplatek/Conque-Shell'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'pernatiy/taglist.vim'
 Plugin 'nvie/vim-flake8'
+Plugin 'elzr/vim-json'
 
 call vundle#end()           " required
 filetype plugin indent on    " required
@@ -72,8 +73,12 @@ map <leader>3 :e#3<CR>
 map <leader>4 :e#4<CR>
 
 " set clipboard=unnamed
-map <F2> :.w !pbcopy<CR><CR>
-map <F3> :r !pbpaste<CR>
+" map <F2> :.w !pbcopy<CR><CR>
+" map <F3> :r !pbpaste<CR>
+map <F2> gg"+yG
+map <F3> "+p
+nmap cp :let @+ = expand("%")<CR>
+nmap cap :let @+ = expand("%:p")<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ spelling mistakes
@@ -171,6 +176,11 @@ nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 " Flake8
 "-----------------------------------------------------------------------------
 autocmd FileType python map <buffer> <F4> :call Flake8()<CR>
+
+"-----------------------------------------------------------------------------
+" vim-json
+"-----------------------------------------------------------------------------
+let vim_json_syntax_conceal=0
 
 "set exrc
 "set secure
