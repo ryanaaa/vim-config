@@ -190,3 +190,11 @@ set noswapfile
 if filereadable(glob(".lvimrc")) 
     source .lvimrc
 endif
+
+
+"-----------------------------------------------------------------------------
+" Highlight Scheme
+"-----------------------------------------------------------------------------
+" hi StatusLine ctermbg=LightGray
+" hi StatusLineNC ctermbg=LightGray
+" hi VertSplit ctermbg=LightGray
