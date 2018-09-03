@@ -20,6 +20,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'pernatiy/taglist.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'elzr/vim-json'
+Plugin 'stephpy/vim-yaml'
 
 call vundle#end()           " required
 filetype plugin indent on    " required
