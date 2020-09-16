@@ -41,6 +41,7 @@ set sw=4
 set sts=4
 
 " fileencoding
+set encoding=utf-8
 set fileencodings=utf-8,gb18030,gbk,gb2312,cp936
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -199,3 +200,4 @@ endif
 " hi StatusLine ctermbg=LightGray
 " hi StatusLineNC ctermbg=LightGray
 " hi VertSplit ctermbg=LightGray
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
