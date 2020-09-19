@@ -21,6 +21,8 @@ Plugin 'pernatiy/taglist.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'elzr/vim-json'
 Plugin 'stephpy/vim-yaml'
+" Plugin 'chrisbra/csv.vim'
+" Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()           " required
 filetype plugin indent on    " required
@@ -201,3 +203,15 @@ endif
 " hi StatusLineNC ctermbg=LightGray
 " hi VertSplit ctermbg=LightGray
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+
+"-----------------------------------------------------------------------------
+" syntastic
+"-----------------------------------------------------------------------------
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_python_checkers = []
+" 
+" let g:syntastic_cpp_compiler_options = '-Ixxx/include'
